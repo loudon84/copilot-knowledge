@@ -2,19 +2,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { app } from "electron";
 import {
-  type AutoTaskEndpointConfig,
-  defaultAutoTaskEndpointConfig,
+  defaultKnowledgeEndpointConfig,
+  type KnowledgeEndpointConfig,
 } from "@/types/endpoint-config";
 
-const CONFIG_FILE = "autotask-endpoint-config.json";
+const CONFIG_FILE = "knowledge-endpoint-config.json";
 
-let cachedConfig: AutoTaskEndpointConfig | null = null;
+let cachedConfig: KnowledgeEndpointConfig | null = null;
 
 function getConfigPath(): string {
   return path.join(app.getPath("userData"), CONFIG_FILE);
 }
 
-export function getEndpointConfig(): AutoTaskEndpointConfig {
+export function getEndpointConfig(): KnowledgeEndpointConfig {
   if (cachedConfig) {
     return cachedConfig;
   }
@@ -24,23 +24,23 @@ export function getEndpointConfig(): AutoTaskEndpointConfig {
     if (fs.existsSync(filePath)) {
       const raw = fs.readFileSync(filePath, "utf-8");
       cachedConfig = {
-        ...defaultAutoTaskEndpointConfig,
+        ...defaultKnowledgeEndpointConfig,
         ...JSON.parse(raw),
-      } as AutoTaskEndpointConfig;
+      } as KnowledgeEndpointConfig;
       return cachedConfig;
     }
   } catch {
     // fall through to default
   }
 
-  cachedConfig = { ...defaultAutoTaskEndpointConfig };
+  cachedConfig = { ...defaultKnowledgeEndpointConfig };
   return cachedConfig;
 }
 
 export function saveEndpointConfig(
-  config: AutoTaskEndpointConfig
-): AutoTaskEndpointConfig {
-  cachedConfig = { ...defaultAutoTaskEndpointConfig, ...config };
+  config: KnowledgeEndpointConfig
+): KnowledgeEndpointConfig {
+  cachedConfig = { ...defaultKnowledgeEndpointConfig, ...config };
   const filePath = getConfigPath();
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, JSON.stringify(cachedConfig, null, 2), "utf-8");

@@ -1,42 +1,26 @@
-export interface AutoTaskEndpointConfig {
-  aiosHomeUrl?: string;
+export interface KnowledgeEndpointConfig {
   authBackendUrl: string;
   authPrefix: string;
-  taskBackendUrl: string;
-  taskPrefix: string;
 }
 
-export const defaultAutoTaskEndpointConfig: AutoTaskEndpointConfig = {
+export const defaultKnowledgeEndpointConfig: KnowledgeEndpointConfig = {
   authBackendUrl: "http://127.0.0.1:4510",
   authPrefix: "/api/v1/auth",
-  taskBackendUrl: "http://127.0.0.1:4520",
-  taskPrefix: "/api/v1/autotask",
-  aiosHomeUrl: "http://127.0.0.1:4517",
 };
 
-export type ApiMode = "mock" | "remote";
+export type KnowledgeDataMode = "mock" | "remote";
 
-export function getApiMode(): ApiMode {
-  const mode = import.meta.env.VITE_AUTOTASK_API_MODE ?? "mock";
+export function getKnowledgeDataMode(): KnowledgeDataMode {
+  const mode = import.meta.env.VITE_KNOWLEDGE_DATA_MODE ?? "mock";
   return mode === "remote" ? "remote" : "mock";
 }
 
 export function buildAuthUrl(
-  config: AutoTaskEndpointConfig,
+  config: KnowledgeEndpointConfig,
   path: string
 ): string {
   const base = config.authBackendUrl.replace(/\/$/, "");
   const prefix = config.authPrefix.replace(/\/$/, "");
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  return `${base}${prefix}${normalizedPath}`;
-}
-
-export function buildTaskUrl(
-  config: AutoTaskEndpointConfig,
-  path: string
-): string {
-  const base = config.taskBackendUrl.replace(/\/$/, "");
-  const prefix = config.taskPrefix.replace(/\/$/, "");
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   return `${base}${prefix}${normalizedPath}`;
 }

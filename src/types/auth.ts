@@ -1,9 +1,15 @@
 export type AuthStatus = "loading" | "authenticated" | "unauthenticated";
 
 export interface PublicAuthUser {
+  avatarUrl?: string;
+  currentOrgId?: string;
   displayName: string;
-  email: string;
+  email?: string;
   id: string;
+  isSuperAdmin?: boolean;
+  orgRole?: string;
+  phone?: string;
+  portalOrgRole?: string;
 }
 
 export interface PublicAuthOrganization {

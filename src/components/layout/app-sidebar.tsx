@@ -1,3 +1,4 @@
+import { BookOpen } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -8,11 +9,10 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar";
-import { Bot } from "lucide-react";
-import type { NavGroup as NavGroupProps } from "./types";
 import { sidebarData } from "./data/sidebar-data";
 import { NavGroup } from "./nav-group";
 import { NavUser } from "./nav-user";
+import type { NavGroup as NavGroupProps } from "./types";
 
 export function AppSidebar() {
   return (
@@ -20,14 +20,16 @@ export function AppSidebar() {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" className="pointer-events-none">
+            <SidebarMenuButton className="pointer-events-none" size="lg">
               <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <Bot className="size-4" />
+                <BookOpen className="size-4" />
               </div>
               <div className="grid flex-1 text-start text-sm leading-tight">
-                <span className="truncate font-semibold">Copilot Studio</span>
-                <span className="truncate text-xs text-muted-foreground">
-                  工作台
+                <span className="truncate font-semibold">
+                  Copilot Knowledge
+                </span>
+                <span className="truncate text-muted-foreground text-xs">
+                  知识应用工作中心
                 </span>
               </div>
             </SidebarMenuButton>

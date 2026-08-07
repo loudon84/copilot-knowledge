@@ -1,11 +1,11 @@
-import { app, safeStorage } from "electron";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { app, safeStorage } from "electron";
 import type { StoredAuthSession } from "./nodeskclaw-auth-response";
 
 export type { StoredAuthSession };
 
-const TOKEN_FILE = "autotask-auth-session.bin";
+const TOKEN_FILE = "knowledge-auth-session.bin";
 
 let memorySession: StoredAuthSession | null = null;
 

@@ -1,6 +1,6 @@
 export {
-  type ApiMode,
-  type AutoTaskEndpointConfig,
-  defaultAutoTaskEndpointConfig,
-  getApiMode,
+  defaultKnowledgeEndpointConfig,
+  getKnowledgeDataMode,
+  type KnowledgeDataMode,
+  type KnowledgeEndpointConfig,
 } from "@/types/endpoint-config";

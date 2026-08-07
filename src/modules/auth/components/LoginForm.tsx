@@ -3,17 +3,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { debug } from "node:console";
 
 interface LoginFormProps {
   defaultAccount?: string;
   onSubmit: (account: string, password: string) => Promise<void>;
 }
 
-export function LoginForm({
-  defaultAccount = "",
-  onSubmit,
-}: LoginFormProps) {
+export function LoginForm({ defaultAccount = "", onSubmit }: LoginFormProps) {
   const [account, setAccount] = useState(defaultAccount);
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);

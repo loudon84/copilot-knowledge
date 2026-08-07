@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "knowledgeBaseCount": 8,
+    "knowledgeSetCount": 4,
+    "documentCount": 24,
+    "weeklyQueryCount": 368
+  },
+  "recentKnowledgeSetIds": ["ks_001", "ks_002", "ks_004", "ks_003"],
+  "recentDocumentIds": [
+    "doc_016",
+    "doc_004",
+    "doc_014",
+    "doc_011",
+    "doc_008",
+    "doc_001"
+  ],
+  "parseStatusSummary": {
+    "completed": 18,
+    "parsing": 2,
+    "failed": 2,
+    "pending": 2
+  }
+}

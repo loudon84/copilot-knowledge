@@ -10,17 +10,15 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { autotaskApi } from "@/services/autotask-api";
-import type { AutomationTask } from "@/types/automation-task";
-import type { SRMPortal } from "@/types/srm-portal";
-import type { TaskRun } from "@/types/task-run";
-import type { WorkflowTemplate } from "@/types/workflow";
+import { knowledgeService } from "@/services/knowledge/knowledge-service";
+import type { KnowledgeBase } from "@/types/knowledge-base";
+import type { KnowledgeDocument } from "@/types/knowledge-document";
+import type { KnowledgeSet } from "@/types/knowledge-set";
 
 interface SearchResults {
-  portals: SRMPortal[];
-  runs: TaskRun[];
-  tasks: AutomationTask[];
-  workflows: WorkflowTemplate[];
+  documents: KnowledgeDocument[];
+  knowledgeBases: KnowledgeBase[];
+  knowledgeSets: KnowledgeSet[];
 }
 
 export function GlobalSearch() {
@@ -35,8 +33,17 @@ export function GlobalSearch() {
       setResults(null);
       return;
     }
-    const data = await autotaskApi.search(value);
-    setResults(data);
+    const [bases, sets, docs] = await Promise.all([
+      knowledgeService.listKnowledgeBases(),
+      knowledgeService.listKnowledgeSets(),
+      knowledgeService.listDocuments(),
+    ]);
+    const q = value.toLowerCase();
+    setResults({
+      knowledgeBases: bases.filter((b) => b.name.toLowerCase().includes(q)),
+      knowledgeSets: sets.filter((s) => s.name.toLowerCase().includes(q)),
+      documents: docs.filter((d) => d.name.toLowerCase().includes(q)),
+    });
   };
 
   return (
@@ -47,81 +54,66 @@ export function GlobalSearch() {
         variant="outline"
       >
         <Search className="mr-2 h-4 w-4" />
-        搜索任务、模板...
+        搜索知识库、文档...
       </Button>
       <CommandDialog onOpenChange={setOpen} open={open}>
         <CommandInput
           onValueChange={handleSearch}
-          placeholder="搜索任务、流程模板、SRM 门户、运行记录..."
+          placeholder="搜索知识库、知识集、文档..."
           value={query}
         />
         <CommandList>
           <CommandEmpty>未找到结果</CommandEmpty>
-          {results && results.tasks.length > 0 && (
-            <CommandGroup heading="任务">
-              {results.tasks.map((task) => (
+          {results && results.knowledgeBases.length > 0 && (
+            <CommandGroup heading="知识库">
+              {results.knowledgeBases.map((kb) => (
                 <CommandItem
-                  key={task.id}
+                  key={kb.id}
                   onSelect={() => {
                     setOpen(false);
                     navigate({
-                      to: "/tasks/$taskId",
-                      params: { taskId: task.id },
+                      to: "/knowledge-bases/$knowledgeBaseId",
+                      params: { knowledgeBaseId: kb.id },
                     });
                   }}
                 >
-                  {task.title}
+                  {kb.name}
                 </CommandItem>
               ))}
             </CommandGroup>
           )}
-          {results && results.workflows.length > 0 && (
-            <CommandGroup heading="流程模板">
-              {results.workflows.map((wf) => (
+          {results && results.knowledgeSets.length > 0 && (
+            <CommandGroup heading="知识集">
+              {results.knowledgeSets.map((ks) => (
                 <CommandItem
-                  key={wf.id}
+                  key={ks.id}
                   onSelect={() => {
                     setOpen(false);
                     navigate({
-                      to: "/workflows/$workflowId",
-                      params: { workflowId: wf.id },
+                      to: "/knowledge-sets/$knowledgeSetId",
+                      params: { knowledgeSetId: ks.id },
                     });
                   }}
                 >
-                  {wf.name}
+                  {ks.name}
                 </CommandItem>
               ))}
             </CommandGroup>
           )}
-          {results && results.portals.length > 0 && (
-            <CommandGroup heading="SRM 门户">
-              {results.portals.map((portal) => (
+          {results && results.documents.length > 0 && (
+            <CommandGroup heading="文档">
+              {results.documents.map((doc) => (
                 <CommandItem
-                  key={portal.id}
+                  key={doc.id}
                   onSelect={() => {
                     setOpen(false);
                     navigate({
-                      to: "/srm-portals/$portalId",
-                      params: { portalId: portal.id },
+                      to: "/documents/$documentId",
+                      params: { documentId: doc.id },
                     });
                   }}
                 >
-                  {portal.name}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          )}
-          {results && results.runs.length > 0 && (
-            <CommandGroup heading="运行记录">
-              {results.runs.map((run) => (
-                <CommandItem
-                  key={run.id}
-                  onSelect={() => {
-                    setOpen(false);
-                    navigate({ to: "/runs/$runId", params: { runId: run.id } });
-                  }}
-                >
-                  {run.taskTitle}
+                  {doc.name}
                 </CommandItem>
               ))}
             </CommandGroup>

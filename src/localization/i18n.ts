@@ -2,24 +2,18 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
-  fallbackLng: "en",
+  fallbackLng: "zh-CN",
   resources: {
     en: {
       translation: {
-        appName: "Copilot Studio",
-        titleHomePage: "Home Page",
-        titleSecondPage: "Second Page",
-        documentation: "Documentation",
-        madeBy: "Made by LuanRoger",
+        appName: "Copilot Knowledge",
+        titleHomePage: "Knowledge Home",
       },
     },
-    "pt-BR": {
+    "zh-CN": {
       translation: {
-        appName: "Copilot Studio",
-        titleHomePage: "Página Inicial",
-        titleSecondPage: "Segunda Página",
-        documentation: "Documentação",
-        madeBy: "Feito por LuanRoger",
+        appName: "Copilot Knowledge",
+        titleHomePage: "知识工作台",
       },
     },
   },

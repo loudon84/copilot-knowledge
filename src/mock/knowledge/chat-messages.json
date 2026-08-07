@@ -1,0 +1,362 @@
+[
+  {
+    "id": "msg_001",
+    "sessionId": "session_001",
+    "role": "user",
+    "content": "我们产品的销售报价策略有哪些要点？",
+    "createdAt": "2026-07-22T13:00:00.000Z"
+  },
+  {
+    "id": "msg_002",
+    "sessionId": "session_001",
+    "role": "assistant",
+    "content": "根据销售产品知识库，报价策略重点包括分层折扣、大客户特批路径与竞品对标底线。建议优先参考《产品报价策略》与《销售话术手册》。",
+    "citations": [
+      {
+        "id": "cite_2_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "根据销售产品知识库，报价策略重点包括分层折扣、大客户特批路径与竞品对标底线。建议优先参考《产品报价策略》与《销售话术手册",
+        "score": 0.86
+      },
+      {
+        "id": "cite_2_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-07-23T13:00:00.000Z"
+  },
+  {
+    "id": "msg_003",
+    "sessionId": "session_001",
+    "role": "user",
+    "content": "大客户特批需要谁审批？",
+    "createdAt": "2026-07-24T13:00:00.000Z"
+  },
+  {
+    "id": "msg_004",
+    "sessionId": "session_001",
+    "role": "assistant",
+    "content": "大客户特批通常需要销售负责人与商务会签，超过阈值时需区域总监最终确认。具体阈值以制度版本为准。",
+    "citations": [
+      {
+        "id": "cite_4_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "大客户特批通常需要销售负责人与商务会签，超过阈值时需区域总监最终确认。具体阈值以制度版本为准。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_4_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-07-25T13:00:00.000Z"
+  },
+  {
+    "id": "msg_005",
+    "sessionId": "session_002",
+    "role": "user",
+    "content": "差旅报销的酒店上限是多少？",
+    "createdAt": "2026-07-26T13:00:00.000Z"
+  },
+  {
+    "id": "msg_006",
+    "sessionId": "session_002",
+    "role": "assistant",
+    "content": "按财务管理制度，国内差旅酒店上限按职级与城市类别区分，一线城市经理级上限更高。请以最新《费用报销制度》为准。",
+    "citations": [
+      {
+        "id": "cite_6_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "按财务管理制度，国内差旅酒店上限按职级与城市类别区分，一线城市经理级上限更高。请以最新《费用报销制度》为准。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_6_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-07-27T13:00:00.000Z"
+  },
+  {
+    "id": "msg_007",
+    "sessionId": "session_002",
+    "role": "user",
+    "content": "预算外费用如何申请？",
+    "createdAt": "2026-07-28T13:00:00.000Z"
+  },
+  {
+    "id": "msg_008",
+    "sessionId": "session_002",
+    "role": "assistant",
+    "content": "预算外费用需先填写加签申请，经部门负责人与财务 BP 审批后方可报销。",
+    "citations": [
+      {
+        "id": "cite_8_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "预算外费用需先填写加签申请，经部门负责人与财务 BP 审批后方可报销。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_8_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-07-29T13:00:00.000Z"
+  },
+  {
+    "id": "msg_009",
+    "sessionId": "session_003",
+    "role": "user",
+    "content": "新供应商准入要准备什么材料？",
+    "createdAt": "2026-07-30T13:00:00.000Z"
+  },
+  {
+    "id": "msg_010",
+    "sessionId": "session_003",
+    "role": "assistant",
+    "content": "一般需要营业执照、资质证书、近三年财务报表与样品检测报告，详见《供应商准入标准》。",
+    "citations": [
+      {
+        "id": "cite_10_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "一般需要营业执照、资质证书、近三年财务报表与样品检测报告，详见《供应商准入标准》。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_10_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-07-31T13:00:00.000Z"
+  },
+  {
+    "id": "msg_011",
+    "sessionId": "session_003",
+    "role": "user",
+    "content": "采购招标评分维度有哪些？",
+    "createdAt": "2026-08-01T13:00:00.000Z"
+  },
+  {
+    "id": "msg_012",
+    "sessionId": "session_003",
+    "role": "assistant",
+    "content": "常见维度包括价格、交付周期、质量体系与售后服务，可参考《招标评分表》。",
+    "citations": [
+      {
+        "id": "cite_12_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "常见维度包括价格、交付周期、质量体系与售后服务，可参考《招标评分表》。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_12_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-08-02T13:00:00.000Z"
+  },
+  {
+    "id": "msg_013",
+    "sessionId": "session_004",
+    "role": "user",
+    "content": "标准销售合同违约金条款怎么写？",
+    "createdAt": "2026-08-03T13:00:00.000Z"
+  },
+  {
+    "id": "msg_014",
+    "sessionId": "session_004",
+    "role": "assistant",
+    "content": "模板建议按合同总额一定比例设置违约金，并约定宽限期。请核对《标准销售合同》现行版本。",
+    "citations": [
+      {
+        "id": "cite_14_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "模板建议按合同总额一定比例设置违约金，并约定宽限期。请核对《标准销售合同》现行版本。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_14_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-08-04T13:00:00.000Z"
+  },
+  {
+    "id": "msg_015",
+    "sessionId": "session_005",
+    "role": "user",
+    "content": "当前主产品的安装环境要求？",
+    "createdAt": "2026-08-05T13:00:00.000Z"
+  },
+  {
+    "id": "msg_016",
+    "sessionId": "session_005",
+    "role": "assistant",
+    "content": "建议至少满足文档中列出的操作系统、内存与网络端口要求，详见《安装部署手册》。",
+    "citations": [
+      {
+        "id": "cite_16_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "建议至少满足文档中列出的操作系统、内存与网络端口要求，详见《安装部署手册》。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_16_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-08-06T13:00:00.000Z"
+  },
+  {
+    "id": "msg_017",
+    "sessionId": "session_005",
+    "role": "user",
+    "content": "v3.2 发布包含哪些变更？",
+    "createdAt": "2026-08-07T13:00:00.000Z"
+  },
+  {
+    "id": "msg_018",
+    "sessionId": "session_005",
+    "role": "assistant",
+    "content": "版本说明中列出了稳定性修复、权限控制增强与若干 API 兼容性改动。",
+    "citations": [
+      {
+        "id": "cite_18_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "版本说明中列出了稳定性修复、权限控制增强与若干 API 兼容性改动。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_18_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-08-08T13:00:00.000Z"
+  },
+  {
+    "id": "msg_019",
+    "sessionId": "session_006",
+    "role": "user",
+    "content": "如何申请知识库编辑权限？",
+    "createdAt": "2026-08-09T13:00:00.000Z"
+  },
+  {
+    "id": "msg_020",
+    "sessionId": "session_006",
+    "role": "assistant",
+    "content": "可在成员与权限中由 Owner/Manager 授予 Editor 角色；组织级可见范围变更需管理员审批。",
+    "citations": [
+      {
+        "id": "cite_20_1",
+        "documentId": "doc_001",
+        "documentName": "销售话术手册.pdf",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 3,
+        "page": 4,
+        "chunkText": "可在成员与权限中由 Owner/Manager 授予 Editor 角色；组织级可见范围变更需管理员审批。",
+        "score": 0.86
+      },
+      {
+        "id": "cite_20_2",
+        "documentId": "doc_002",
+        "documentName": "产品报价策略.docx",
+        "knowledgeBaseName": "销售产品知识库",
+        "version": 2,
+        "page": 2,
+        "chunkText": "报价策略重点包括分层折扣与大客户特批路径。",
+        "score": 0.81
+      }
+    ],
+    "createdAt": "2026-08-10T13:00:00.000Z"
+  }
+]

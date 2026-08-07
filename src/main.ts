@@ -6,9 +6,7 @@ import {
   REACT_DEVELOPER_TOOLS,
 } from "electron-devtools-installer";
 import { UpdateSourceType, updateElectronApp } from "update-electron-app";
-import { clearSession } from "@/main/auth/token-store";
 import { ipcContext } from "@/ipc/context";
-import { webWorkspaceManager } from "@/ipc/web-workspace/workspace-manager";
 import { IPC_CHANNELS, inDevelopment } from "./constants";
 import { getBasePath } from "./utils/path";
 
@@ -21,9 +19,9 @@ function createWindow() {
     webPreferences: {
       devTools: inDevelopment,
       contextIsolation: true,
-      nodeIntegration: true,
+      nodeIntegration: false,
       nodeIntegrationInSubFrames: false,
-
+      sandbox: true,
       preload,
     },
     titleBarStyle: process.platform === "darwin" ? "hiddenInset" : "hidden",
@@ -31,7 +29,6 @@ function createWindow() {
       process.platform === "darwin" ? { x: 5, y: 5 } : undefined,
   });
   ipcContext.setMainWindow(mainWindow);
-  webWorkspaceManager.setMainWindow(mainWindow);
 
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
@@ -55,7 +52,7 @@ function checkForUpdates() {
   updateElectronApp({
     updateSource: {
       type: UpdateSourceType.ElectronPublicUpdateService,
-      repo: "LuanRoger/electron-shadcn",
+      repo: "loudon84/copilot-knowledge",
     },
   });
 }
@@ -73,19 +70,17 @@ async function setupORPC() {
 
 app.whenReady().then(async () => {
   try {
-    // TODO: 临时调试用，验证登录全流程后删除
-    await clearSession();
-
     createWindow();
     await installExtensions();
-    
     await setupORPC();
+    if (!inDevelopment) {
+      checkForUpdates();
+    }
   } catch (error) {
     console.error("Error during app initialization:", error);
   }
 });
 
-//osX only
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
@@ -97,4 +92,3 @@ app.on("activate", () => {
     createWindow();
   }
 });
-//osX only ends

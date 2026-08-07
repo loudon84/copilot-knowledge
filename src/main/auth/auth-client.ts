@@ -1,14 +1,14 @@
 import {
-  type AutoTaskEndpointConfig,
   buildAuthUrl,
+  type KnowledgeEndpointConfig,
 } from "@/types/endpoint-config";
 import { getEndpointConfig } from "./auth-endpoint-config-store";
 import {
   type AuthMeResponse,
   type AuthTokenData,
   type AuthUserResponse,
-  type StoredAuthSession,
   isNodeskclawApiEnvelope,
+  type StoredAuthSession,
   toStoredSession,
 } from "./nodeskclaw-auth-response";
 import {
@@ -40,7 +40,6 @@ async function authFetch<T>(
       ...options.headers,
     },
   });
-  debugger;
   if (res.status === 204) {
     return undefined as T;
   }
@@ -53,7 +52,6 @@ async function authFetch<T>(
   }
 
   if (isNodeskclawApiEnvelope<T>(body)) {
-    debugger;
     if (body.code !== 0 || !res.ok) {
       throw new AuthError(
         body.message || `Auth request failed: ${res.status}`,
@@ -76,7 +74,7 @@ async function authFetch<T>(
   return body as T;
 }
 
-function getConfig(): AutoTaskEndpointConfig {
+function getConfig(): KnowledgeEndpointConfig {
   return getEndpointConfig();
 }
 
@@ -90,11 +88,19 @@ async function resolveAuthUser(
   return fallbackUser;
 }
 
-function sessionUserToAuthUser(user: StoredAuthSession["user"]): AuthUserResponse {
+function sessionUserToAuthUser(
+  user: StoredAuthSession["user"]
+): AuthUserResponse {
   return {
     id: user.id,
-    email: user.email,
+    email: user.email ?? "",
     name: user.displayName,
+    phone: user.phone,
+    avatar_url: user.avatarUrl,
+    current_org_id: user.currentOrgId,
+    org_role: user.orgRole,
+    portal_org_role: user.portalOrgRole,
+    is_super_admin: user.isSuperAdmin,
   };
 }
 
@@ -109,19 +115,27 @@ export async function loginWithCredentials(
       method: "POST",
       body: JSON.stringify({ account, password }),
     }
-  ); 
-  if (!tokenData.user) {
+  );
+
+  let user = tokenData.user;
+  if (!user) {
     throw new AuthError("登录响应缺少用户信息", 500);
   }
 
-  const session = toStoredSession(tokenData, tokenData.user);
+  try {
+    const me = await fetchMe(tokenData.access_token);
+    user = me;
+  } catch {
+    // keep login user if /me fails
+  }
+
+  const session = toStoredSession(tokenData, user);
   await saveSession(session);
   return session;
 }
 
 export function fetchMe(accessToken: string): Promise<AuthMeResponse> {
   const config = getConfig();
-  debugger;
   return authFetch<AuthMeResponse>(buildAuthUrl(config, "/me"), {
     method: "GET",
     headers: { Authorization: `Bearer ${accessToken}` },
@@ -144,10 +158,15 @@ export async function refreshSession(): Promise<StoredAuthSession | null> {
       }
     );
 
-    const user = await resolveAuthUser(
+    let user = await resolveAuthUser(
       tokenData,
       sessionUserToAuthUser(current.user)
     );
+    try {
+      user = await fetchMe(tokenData.access_token);
+    } catch {
+      // keep resolved user
+    }
     const session = toStoredSession(tokenData, user);
     await saveSession(session);
     return session;

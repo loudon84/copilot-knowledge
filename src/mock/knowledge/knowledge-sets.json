@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ks_001",
+    "name": "销售工作知识集",
+    "description": "面向一线销售的产品、合同与话术检索集合。",
+    "knowledgeBaseIds": ["kb_001", "kb_004", "kb_005"],
+    "weights": {
+      "kb_001": 0.45,
+      "kb_004": 0.25,
+      "kb_005": 0.3
+    },
+    "visibility": "organization",
+    "retrievalConfig": {
+      "topK": 6,
+      "similarityThreshold": 0.62,
+      "keywordWeight": 0.35,
+      "vectorWeight": 0.65,
+      "enableRerank": true,
+      "answerModel": "qwen2.5-72b-instruct"
+    },
+    "createdBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-06T11:00:00.000Z",
+    "updatedAt": "2026-07-29T14:00:00.000Z",
+    "documentCount": 10
+  },
+  {
+    "id": "ks_002",
+    "name": "财务制度集",
+    "description": "财务报销、预算与核算制度问答集合。",
+    "knowledgeBaseIds": ["kb_002"],
+    "weights": {
+      "kb_002": 1
+    },
+    "visibility": "department",
+    "retrievalConfig": {
+      "topK": 5,
+      "similarityThreshold": 0.7,
+      "keywordWeight": 0.4,
+      "vectorWeight": 0.6,
+      "enableRerank": true,
+      "answerModel": "qwen2.5-72b-instruct"
+    },
+    "createdBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-07T11:00:00.000Z",
+    "updatedAt": "2026-07-28T14:00:00.000Z",
+    "documentCount": 3
+  },
+  {
+    "id": "ks_003",
+    "name": "采购与合同集",
+    "description": "采购规范与合同条款联合检索。",
+    "knowledgeBaseIds": ["kb_003", "kb_004"],
+    "weights": {
+      "kb_003": 0.55,
+      "kb_004": 0.45
+    },
+    "visibility": "organization",
+    "retrievalConfig": {
+      "topK": 8,
+      "similarityThreshold": 0.6,
+      "keywordWeight": 0.3,
+      "vectorWeight": 0.7,
+      "enableRerank": false,
+      "answerModel": "deepseek-v3"
+    },
+    "createdBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-08T11:00:00.000Z",
+    "updatedAt": "2026-07-27T14:00:00.000Z",
+    "documentCount": 6
+  },
+  {
+    "id": "ks_004",
+    "name": "产品资料集",
+    "description": "产品规格、发布说明与相关销售资料。",
+    "knowledgeBaseIds": ["kb_005", "kb_001"],
+    "weights": {
+      "kb_005": 0.6,
+      "kb_001": 0.4
+    },
+    "visibility": "organization",
+    "retrievalConfig": {
+      "topK": 5,
+      "similarityThreshold": 0.65,
+      "keywordWeight": 0.25,
+      "vectorWeight": 0.75,
+      "enableRerank": true,
+      "answerModel": "qwen2.5-72b-instruct"
+    },
+    "createdBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-09T11:00:00.000Z",
+    "updatedAt": "2026-07-26T14:00:00.000Z",
+    "documentCount": 7
+  }
+]

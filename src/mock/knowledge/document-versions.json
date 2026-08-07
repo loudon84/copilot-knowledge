@@ -1,0 +1,514 @@
+[
+  {
+    "id": "ver_001",
+    "documentId": "doc_001",
+    "version": 1,
+    "fileName": "销售话术手册_v1.pdf",
+    "size": 1960000,
+    "mimeType": "application/pdf",
+    "status": "archived",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-05T11:00:00.000Z"
+  },
+  {
+    "id": "ver_002",
+    "documentId": "doc_001",
+    "version": 2,
+    "fileName": "销售话术手册_v2.pdf",
+    "size": 2205000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-06T12:00:00.000Z"
+  },
+  {
+    "id": "ver_003",
+    "documentId": "doc_001",
+    "version": 3,
+    "fileName": "销售话术手册.pdf",
+    "size": 2450000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-07T13:00:00.000Z"
+  },
+  {
+    "id": "ver_004",
+    "documentId": "doc_002",
+    "version": 1,
+    "fileName": "产品报价策略_v1.docx",
+    "size": 304000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-04T11:00:00.000Z"
+  },
+  {
+    "id": "ver_005",
+    "documentId": "doc_002",
+    "version": 2,
+    "fileName": "产品报价策略.docx",
+    "size": 342000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "ver_006",
+    "documentId": "doc_003",
+    "version": 1,
+    "fileName": "竞品分析-2026Q2.xlsx",
+    "size": 416000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_007",
+    "documentId": "doc_004",
+    "version": 1,
+    "fileName": "大客户跟进指南.md",
+    "size": 38400,
+    "mimeType": "text/markdown",
+    "status": "current",
+    "parseStatus": "parsing",
+    "uploadedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_008",
+    "documentId": "doc_005",
+    "version": 1,
+    "fileName": "费用报销制度_v1.pdf",
+    "size": 896000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-04T11:00:00.000Z"
+  },
+  {
+    "id": "ver_009",
+    "documentId": "doc_005",
+    "version": 2,
+    "fileName": "费用报销制度.pdf",
+    "size": 1008000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "ver_010",
+    "documentId": "doc_006",
+    "version": 1,
+    "fileName": "预算管理办法.docx",
+    "size": 232000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_011",
+    "documentId": "doc_007",
+    "version": 1,
+    "fileName": "会计科目说明.xlsx",
+    "size": 328000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "current",
+    "parseStatus": "failed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_012",
+    "documentId": "doc_008",
+    "version": 1,
+    "fileName": "采购申请流程_v1.pdf",
+    "size": 712000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-04T11:00:00.000Z"
+  },
+  {
+    "id": "ver_013",
+    "documentId": "doc_008",
+    "version": 2,
+    "fileName": "采购申请流程.pdf",
+    "size": 801000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "ver_014",
+    "documentId": "doc_009",
+    "version": 1,
+    "fileName": "供应商准入标准.docx",
+    "size": 192000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_015",
+    "documentId": "doc_010",
+    "version": 1,
+    "fileName": "招标评分表.xlsx",
+    "size": 144000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "current",
+    "parseStatus": "pending",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_016",
+    "documentId": "doc_011",
+    "version": 1,
+    "fileName": "标准销售合同_v1.pdf",
+    "size": 608000,
+    "mimeType": "application/pdf",
+    "status": "archived",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-05T11:00:00.000Z"
+  },
+  {
+    "id": "ver_017",
+    "documentId": "doc_011",
+    "version": 2,
+    "fileName": "标准销售合同_v2.pdf",
+    "size": 684000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-06T12:00:00.000Z"
+  },
+  {
+    "id": "ver_018",
+    "documentId": "doc_011",
+    "version": 3,
+    "fileName": "标准销售合同.pdf",
+    "size": 760000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-07T13:00:00.000Z"
+  },
+  {
+    "id": "ver_019",
+    "documentId": "doc_012",
+    "version": 1,
+    "fileName": "保密协议模板.docx",
+    "size": 76800,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_020",
+    "documentId": "doc_013",
+    "version": 1,
+    "fileName": "合同条款修订说明.md",
+    "size": 25600,
+    "mimeType": "text/markdown",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_021",
+    "documentId": "doc_014",
+    "version": 1,
+    "fileName": "产品规格说明书_v1.pdf",
+    "size": 2560000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-04T11:00:00.000Z"
+  },
+  {
+    "id": "ver_022",
+    "documentId": "doc_014",
+    "version": 2,
+    "fileName": "产品规格说明书.pdf",
+    "size": 2880000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "ver_023",
+    "documentId": "doc_015",
+    "version": 1,
+    "fileName": "安装部署手册.docx",
+    "size": 432000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_024",
+    "documentId": "doc_016",
+    "version": 1,
+    "fileName": "版本发布说明-v3.2.md",
+    "size": 22400,
+    "mimeType": "text/markdown",
+    "status": "current",
+    "parseStatus": "parsing",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_025",
+    "documentId": "doc_017",
+    "version": 1,
+    "fileName": "员工手册2026.pdf",
+    "size": 1248000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_026",
+    "documentId": "doc_018",
+    "version": 1,
+    "fileName": "绩效考核标准.docx",
+    "size": 168000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_027",
+    "documentId": "doc_019",
+    "version": 1,
+    "fileName": "客服话术库.pdf",
+    "size": 544000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "failed",
+    "uploadedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_028",
+    "documentId": "doc_020",
+    "version": 1,
+    "fileName": "工单处理流程.docx",
+    "size": 140000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_029",
+    "documentId": "doc_021",
+    "version": 1,
+    "fileName": "售后FAQ.txt",
+    "size": 17600,
+    "mimeType": "text/plain",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  },
+  {
+    "id": "ver_030",
+    "documentId": "doc_022",
+    "version": 1,
+    "fileName": "权限矩阵说明_v1.pdf",
+    "size": 344000,
+    "mimeType": "application/pdf",
+    "status": "replaced",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-04T11:00:00.000Z"
+  },
+  {
+    "id": "ver_031",
+    "documentId": "doc_022",
+    "version": 2,
+    "fileName": "权限矩阵说明.pdf",
+    "size": 387000,
+    "mimeType": "application/pdf",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "ver_032",
+    "documentId": "doc_023",
+    "version": 1,
+    "fileName": "信息安全制度.docx",
+    "size": 248000,
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "status": "current",
+    "parseStatus": "completed",
+    "uploadedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-03T11:00:00.000Z"
+  }
+]

@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/collapsible";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import type { AutoTaskEndpointConfig } from "@/types/endpoint-config";
-import { defaultAutoTaskEndpointConfig } from "@/types/endpoint-config";
+import type { KnowledgeEndpointConfig } from "@/types/endpoint-config";
+import { defaultKnowledgeEndpointConfig } from "@/types/endpoint-config";
 
 interface EndpointConfigPanelProps {
-  config: AutoTaskEndpointConfig;
-  onChange: (config: AutoTaskEndpointConfig) => void;
+  config: KnowledgeEndpointConfig;
+  onChange: (config: KnowledgeEndpointConfig) => void;
 }
 
 export function EndpointConfigPanel({
@@ -22,7 +22,7 @@ export function EndpointConfigPanel({
 }: EndpointConfigPanelProps) {
   const [open, setOpen] = useState(false);
 
-  const update = (patch: Partial<AutoTaskEndpointConfig>) => {
+  const update = (patch: Partial<KnowledgeEndpointConfig>) => {
     onChange({ ...config, ...patch });
   };
 
@@ -33,16 +33,16 @@ export function EndpointConfigPanel({
           <ChevronDown
             className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
           />
-          高级：Endpoint 配置
+          连接设置
         </Button>
       </CollapsibleTrigger>
       <CollapsibleContent className="space-y-3 pt-2">
         <div className="space-y-2">
-          <Label htmlFor="authBackendUrl">Auth Backend URL</Label>
+          <Label htmlFor="authBackendUrl">服务地址</Label>
           <Input
             id="authBackendUrl"
             onChange={(e) => update({ authBackendUrl: e.target.value })}
-            placeholder={defaultAutoTaskEndpointConfig.authBackendUrl}
+            placeholder={defaultKnowledgeEndpointConfig.authBackendUrl}
             value={config.authBackendUrl}
           />
         </div>
@@ -52,23 +52,6 @@ export function EndpointConfigPanel({
             id="authPrefix"
             onChange={(e) => update({ authPrefix: e.target.value })}
             value={config.authPrefix}
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="taskBackendUrl">Task Backend URL</Label>
-          <Input
-            id="taskBackendUrl"
-            onChange={(e) => update({ taskBackendUrl: e.target.value })}
-            placeholder={defaultAutoTaskEndpointConfig.taskBackendUrl}
-            value={config.taskBackendUrl}
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="taskPrefix">Task Prefix</Label>
-          <Input
-            id="taskPrefix"
-            onChange={(e) => update({ taskPrefix: e.target.value })}
-            value={config.taskPrefix}
           />
         </div>
       </CollapsibleContent>

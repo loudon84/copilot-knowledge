@@ -9,40 +9,38 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SettingsRouteImport } from './routes/settings'
-import { Route as DashboardRouteImport } from './routes/dashboard'
-import { Route as ComponentsRouteImport } from './routes/components'
-import { Route as ArtifactsRouteImport } from './routes/artifacts'
+import { Route as UploadsRouteImport } from './routes/uploads'
+import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as PreferencesRouteImport } from './routes/preferences'
+import { Route as HomeRouteImport } from './routes/home'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as WorkflowsIndexRouteImport } from './routes/workflows/index'
-import { Route as WebWorkspaceIndexRouteImport } from './routes/web-workspace/index'
-import { Route as TasksIndexRouteImport } from './routes/tasks/index'
-import { Route as SrmPortalsIndexRouteImport } from './routes/srm-portals/index'
-import { Route as RunsIndexRouteImport } from './routes/runs/index'
-import { Route as WorkflowsWorkflowIdRouteImport } from './routes/workflows/$workflowId'
-import { Route as TasksNewRouteImport } from './routes/tasks/new'
-import { Route as TasksTaskIdRouteImport } from './routes/tasks/$taskId'
-import { Route as SrmPortalsPortalIdRouteImport } from './routes/srm-portals/$portalId'
-import { Route as RunsRunIdRouteImport } from './routes/runs/$runId'
+import { Route as KnowledgeSetsIndexRouteImport } from './routes/knowledge-sets/index'
+import { Route as KnowledgeBasesIndexRouteImport } from './routes/knowledge-bases/index'
+import { Route as DocumentsIndexRouteImport } from './routes/documents/index'
+import { Route as ChatIndexRouteImport } from './routes/chat/index'
+import { Route as KnowledgeSetsKnowledgeSetIdRouteImport } from './routes/knowledge-sets/$knowledgeSetId'
+import { Route as KnowledgeBasesKnowledgeBaseIdRouteImport } from './routes/knowledge-bases/$knowledgeBaseId'
+import { Route as DocumentsDocumentIdRouteImport } from './routes/documents/$documentId'
+import { Route as ChatSessionIdRouteImport } from './routes/chat/$sessionId'
 
-const SettingsRoute = SettingsRouteImport.update({
-  id: '/settings',
-  path: '/settings',
+const UploadsRoute = UploadsRouteImport.update({
+  id: '/uploads',
+  path: '/uploads',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ComponentsRoute = ComponentsRouteImport.update({
-  id: '/components',
-  path: '/components',
+const PreferencesRoute = PreferencesRouteImport.update({
+  id: '/preferences',
+  path: '/preferences',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArtifactsRoute = ArtifactsRouteImport.update({
-  id: '/artifacts',
-  path: '/artifacts',
+const HomeRoute = HomeRouteImport.update({
+  id: '/home',
+  path: '/home',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -50,209 +48,187 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WorkflowsIndexRoute = WorkflowsIndexRouteImport.update({
-  id: '/workflows/',
-  path: '/workflows/',
+const KnowledgeSetsIndexRoute = KnowledgeSetsIndexRouteImport.update({
+  id: '/knowledge-sets/',
+  path: '/knowledge-sets/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WebWorkspaceIndexRoute = WebWorkspaceIndexRouteImport.update({
-  id: '/web-workspace/',
-  path: '/web-workspace/',
+const KnowledgeBasesIndexRoute = KnowledgeBasesIndexRouteImport.update({
+  id: '/knowledge-bases/',
+  path: '/knowledge-bases/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TasksIndexRoute = TasksIndexRouteImport.update({
-  id: '/tasks/',
-  path: '/tasks/',
+const DocumentsIndexRoute = DocumentsIndexRouteImport.update({
+  id: '/documents/',
+  path: '/documents/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SrmPortalsIndexRoute = SrmPortalsIndexRouteImport.update({
-  id: '/srm-portals/',
-  path: '/srm-portals/',
+const ChatIndexRoute = ChatIndexRouteImport.update({
+  id: '/chat/',
+  path: '/chat/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RunsIndexRoute = RunsIndexRouteImport.update({
-  id: '/runs/',
-  path: '/runs/',
+const KnowledgeSetsKnowledgeSetIdRoute =
+  KnowledgeSetsKnowledgeSetIdRouteImport.update({
+    id: '/knowledge-sets/$knowledgeSetId',
+    path: '/knowledge-sets/$knowledgeSetId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const KnowledgeBasesKnowledgeBaseIdRoute =
+  KnowledgeBasesKnowledgeBaseIdRouteImport.update({
+    id: '/knowledge-bases/$knowledgeBaseId',
+    path: '/knowledge-bases/$knowledgeBaseId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocumentsDocumentIdRoute = DocumentsDocumentIdRouteImport.update({
+  id: '/documents/$documentId',
+  path: '/documents/$documentId',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WorkflowsWorkflowIdRoute = WorkflowsWorkflowIdRouteImport.update({
-  id: '/workflows/$workflowId',
-  path: '/workflows/$workflowId',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TasksNewRoute = TasksNewRouteImport.update({
-  id: '/tasks/new',
-  path: '/tasks/new',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TasksTaskIdRoute = TasksTaskIdRouteImport.update({
-  id: '/tasks/$taskId',
-  path: '/tasks/$taskId',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SrmPortalsPortalIdRoute = SrmPortalsPortalIdRouteImport.update({
-  id: '/srm-portals/$portalId',
-  path: '/srm-portals/$portalId',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RunsRunIdRoute = RunsRunIdRouteImport.update({
-  id: '/runs/$runId',
-  path: '/runs/$runId',
+const ChatSessionIdRoute = ChatSessionIdRouteImport.update({
+  id: '/chat/$sessionId',
+  path: '/chat/$sessionId',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/artifacts': typeof ArtifactsRoute
-  '/components': typeof ComponentsRoute
-  '/dashboard': typeof DashboardRoute
-  '/settings': typeof SettingsRoute
-  '/runs/$runId': typeof RunsRunIdRoute
-  '/srm-portals/$portalId': typeof SrmPortalsPortalIdRoute
-  '/tasks/$taskId': typeof TasksTaskIdRoute
-  '/tasks/new': typeof TasksNewRoute
-  '/workflows/$workflowId': typeof WorkflowsWorkflowIdRoute
-  '/runs/': typeof RunsIndexRoute
-  '/srm-portals/': typeof SrmPortalsIndexRoute
-  '/tasks/': typeof TasksIndexRoute
-  '/web-workspace/': typeof WebWorkspaceIndexRoute
-  '/workflows/': typeof WorkflowsIndexRoute
+  '/home': typeof HomeRoute
+  '/preferences': typeof PreferencesRoute
+  '/profile': typeof ProfileRoute
+  '/uploads': typeof UploadsRoute
+  '/chat/$sessionId': typeof ChatSessionIdRoute
+  '/documents/$documentId': typeof DocumentsDocumentIdRoute
+  '/knowledge-bases/$knowledgeBaseId': typeof KnowledgeBasesKnowledgeBaseIdRoute
+  '/knowledge-sets/$knowledgeSetId': typeof KnowledgeSetsKnowledgeSetIdRoute
+  '/chat/': typeof ChatIndexRoute
+  '/documents/': typeof DocumentsIndexRoute
+  '/knowledge-bases/': typeof KnowledgeBasesIndexRoute
+  '/knowledge-sets/': typeof KnowledgeSetsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/artifacts': typeof ArtifactsRoute
-  '/components': typeof ComponentsRoute
-  '/dashboard': typeof DashboardRoute
-  '/settings': typeof SettingsRoute
-  '/runs/$runId': typeof RunsRunIdRoute
-  '/srm-portals/$portalId': typeof SrmPortalsPortalIdRoute
-  '/tasks/$taskId': typeof TasksTaskIdRoute
-  '/tasks/new': typeof TasksNewRoute
-  '/workflows/$workflowId': typeof WorkflowsWorkflowIdRoute
-  '/runs': typeof RunsIndexRoute
-  '/srm-portals': typeof SrmPortalsIndexRoute
-  '/tasks': typeof TasksIndexRoute
-  '/web-workspace': typeof WebWorkspaceIndexRoute
-  '/workflows': typeof WorkflowsIndexRoute
+  '/home': typeof HomeRoute
+  '/preferences': typeof PreferencesRoute
+  '/profile': typeof ProfileRoute
+  '/uploads': typeof UploadsRoute
+  '/chat/$sessionId': typeof ChatSessionIdRoute
+  '/documents/$documentId': typeof DocumentsDocumentIdRoute
+  '/knowledge-bases/$knowledgeBaseId': typeof KnowledgeBasesKnowledgeBaseIdRoute
+  '/knowledge-sets/$knowledgeSetId': typeof KnowledgeSetsKnowledgeSetIdRoute
+  '/chat': typeof ChatIndexRoute
+  '/documents': typeof DocumentsIndexRoute
+  '/knowledge-bases': typeof KnowledgeBasesIndexRoute
+  '/knowledge-sets': typeof KnowledgeSetsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/artifacts': typeof ArtifactsRoute
-  '/components': typeof ComponentsRoute
-  '/dashboard': typeof DashboardRoute
-  '/settings': typeof SettingsRoute
-  '/runs/$runId': typeof RunsRunIdRoute
-  '/srm-portals/$portalId': typeof SrmPortalsPortalIdRoute
-  '/tasks/$taskId': typeof TasksTaskIdRoute
-  '/tasks/new': typeof TasksNewRoute
-  '/workflows/$workflowId': typeof WorkflowsWorkflowIdRoute
-  '/runs/': typeof RunsIndexRoute
-  '/srm-portals/': typeof SrmPortalsIndexRoute
-  '/tasks/': typeof TasksIndexRoute
-  '/web-workspace/': typeof WebWorkspaceIndexRoute
-  '/workflows/': typeof WorkflowsIndexRoute
+  '/home': typeof HomeRoute
+  '/preferences': typeof PreferencesRoute
+  '/profile': typeof ProfileRoute
+  '/uploads': typeof UploadsRoute
+  '/chat/$sessionId': typeof ChatSessionIdRoute
+  '/documents/$documentId': typeof DocumentsDocumentIdRoute
+  '/knowledge-bases/$knowledgeBaseId': typeof KnowledgeBasesKnowledgeBaseIdRoute
+  '/knowledge-sets/$knowledgeSetId': typeof KnowledgeSetsKnowledgeSetIdRoute
+  '/chat/': typeof ChatIndexRoute
+  '/documents/': typeof DocumentsIndexRoute
+  '/knowledge-bases/': typeof KnowledgeBasesIndexRoute
+  '/knowledge-sets/': typeof KnowledgeSetsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/artifacts'
-    | '/components'
-    | '/dashboard'
-    | '/settings'
-    | '/runs/$runId'
-    | '/srm-portals/$portalId'
-    | '/tasks/$taskId'
-    | '/tasks/new'
-    | '/workflows/$workflowId'
-    | '/runs/'
-    | '/srm-portals/'
-    | '/tasks/'
-    | '/web-workspace/'
-    | '/workflows/'
+    | '/home'
+    | '/preferences'
+    | '/profile'
+    | '/uploads'
+    | '/chat/$sessionId'
+    | '/documents/$documentId'
+    | '/knowledge-bases/$knowledgeBaseId'
+    | '/knowledge-sets/$knowledgeSetId'
+    | '/chat/'
+    | '/documents/'
+    | '/knowledge-bases/'
+    | '/knowledge-sets/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/artifacts'
-    | '/components'
-    | '/dashboard'
-    | '/settings'
-    | '/runs/$runId'
-    | '/srm-portals/$portalId'
-    | '/tasks/$taskId'
-    | '/tasks/new'
-    | '/workflows/$workflowId'
-    | '/runs'
-    | '/srm-portals'
-    | '/tasks'
-    | '/web-workspace'
-    | '/workflows'
+    | '/home'
+    | '/preferences'
+    | '/profile'
+    | '/uploads'
+    | '/chat/$sessionId'
+    | '/documents/$documentId'
+    | '/knowledge-bases/$knowledgeBaseId'
+    | '/knowledge-sets/$knowledgeSetId'
+    | '/chat'
+    | '/documents'
+    | '/knowledge-bases'
+    | '/knowledge-sets'
   id:
     | '__root__'
     | '/'
-    | '/artifacts'
-    | '/components'
-    | '/dashboard'
-    | '/settings'
-    | '/runs/$runId'
-    | '/srm-portals/$portalId'
-    | '/tasks/$taskId'
-    | '/tasks/new'
-    | '/workflows/$workflowId'
-    | '/runs/'
-    | '/srm-portals/'
-    | '/tasks/'
-    | '/web-workspace/'
-    | '/workflows/'
+    | '/home'
+    | '/preferences'
+    | '/profile'
+    | '/uploads'
+    | '/chat/$sessionId'
+    | '/documents/$documentId'
+    | '/knowledge-bases/$knowledgeBaseId'
+    | '/knowledge-sets/$knowledgeSetId'
+    | '/chat/'
+    | '/documents/'
+    | '/knowledge-bases/'
+    | '/knowledge-sets/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ArtifactsRoute: typeof ArtifactsRoute
-  ComponentsRoute: typeof ComponentsRoute
-  DashboardRoute: typeof DashboardRoute
-  SettingsRoute: typeof SettingsRoute
-  RunsRunIdRoute: typeof RunsRunIdRoute
-  SrmPortalsPortalIdRoute: typeof SrmPortalsPortalIdRoute
-  TasksTaskIdRoute: typeof TasksTaskIdRoute
-  TasksNewRoute: typeof TasksNewRoute
-  WorkflowsWorkflowIdRoute: typeof WorkflowsWorkflowIdRoute
-  RunsIndexRoute: typeof RunsIndexRoute
-  SrmPortalsIndexRoute: typeof SrmPortalsIndexRoute
-  TasksIndexRoute: typeof TasksIndexRoute
-  WebWorkspaceIndexRoute: typeof WebWorkspaceIndexRoute
-  WorkflowsIndexRoute: typeof WorkflowsIndexRoute
+  HomeRoute: typeof HomeRoute
+  PreferencesRoute: typeof PreferencesRoute
+  ProfileRoute: typeof ProfileRoute
+  UploadsRoute: typeof UploadsRoute
+  ChatSessionIdRoute: typeof ChatSessionIdRoute
+  DocumentsDocumentIdRoute: typeof DocumentsDocumentIdRoute
+  KnowledgeBasesKnowledgeBaseIdRoute: typeof KnowledgeBasesKnowledgeBaseIdRoute
+  KnowledgeSetsKnowledgeSetIdRoute: typeof KnowledgeSetsKnowledgeSetIdRoute
+  ChatIndexRoute: typeof ChatIndexRoute
+  DocumentsIndexRoute: typeof DocumentsIndexRoute
+  KnowledgeBasesIndexRoute: typeof KnowledgeBasesIndexRoute
+  KnowledgeSetsIndexRoute: typeof KnowledgeSetsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/settings': {
-      id: '/settings'
-      path: '/settings'
-      fullPath: '/settings'
-      preLoaderRoute: typeof SettingsRouteImport
+    '/uploads': {
+      id: '/uploads'
+      path: '/uploads'
+      fullPath: '/uploads'
+      preLoaderRoute: typeof UploadsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/components': {
-      id: '/components'
-      path: '/components'
-      fullPath: '/components'
-      preLoaderRoute: typeof ComponentsRouteImport
+    '/preferences': {
+      id: '/preferences'
+      path: '/preferences'
+      fullPath: '/preferences'
+      preLoaderRoute: typeof PreferencesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/artifacts': {
-      id: '/artifacts'
-      path: '/artifacts'
-      fullPath: '/artifacts'
-      preLoaderRoute: typeof ArtifactsRouteImport
+    '/home': {
+      id: '/home'
+      path: '/home'
+      fullPath: '/home'
+      preLoaderRoute: typeof HomeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -262,74 +238,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/workflows/': {
-      id: '/workflows/'
-      path: '/workflows'
-      fullPath: '/workflows/'
-      preLoaderRoute: typeof WorkflowsIndexRouteImport
+    '/knowledge-sets/': {
+      id: '/knowledge-sets/'
+      path: '/knowledge-sets'
+      fullPath: '/knowledge-sets/'
+      preLoaderRoute: typeof KnowledgeSetsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/web-workspace/': {
-      id: '/web-workspace/'
-      path: '/web-workspace'
-      fullPath: '/web-workspace/'
-      preLoaderRoute: typeof WebWorkspaceIndexRouteImport
+    '/knowledge-bases/': {
+      id: '/knowledge-bases/'
+      path: '/knowledge-bases'
+      fullPath: '/knowledge-bases/'
+      preLoaderRoute: typeof KnowledgeBasesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tasks/': {
-      id: '/tasks/'
-      path: '/tasks'
-      fullPath: '/tasks/'
-      preLoaderRoute: typeof TasksIndexRouteImport
+    '/documents/': {
+      id: '/documents/'
+      path: '/documents'
+      fullPath: '/documents/'
+      preLoaderRoute: typeof DocumentsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/srm-portals/': {
-      id: '/srm-portals/'
-      path: '/srm-portals'
-      fullPath: '/srm-portals/'
-      preLoaderRoute: typeof SrmPortalsIndexRouteImport
+    '/chat/': {
+      id: '/chat/'
+      path: '/chat'
+      fullPath: '/chat/'
+      preLoaderRoute: typeof ChatIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/runs/': {
-      id: '/runs/'
-      path: '/runs'
-      fullPath: '/runs/'
-      preLoaderRoute: typeof RunsIndexRouteImport
+    '/knowledge-sets/$knowledgeSetId': {
+      id: '/knowledge-sets/$knowledgeSetId'
+      path: '/knowledge-sets/$knowledgeSetId'
+      fullPath: '/knowledge-sets/$knowledgeSetId'
+      preLoaderRoute: typeof KnowledgeSetsKnowledgeSetIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/workflows/$workflowId': {
-      id: '/workflows/$workflowId'
-      path: '/workflows/$workflowId'
-      fullPath: '/workflows/$workflowId'
-      preLoaderRoute: typeof WorkflowsWorkflowIdRouteImport
+    '/knowledge-bases/$knowledgeBaseId': {
+      id: '/knowledge-bases/$knowledgeBaseId'
+      path: '/knowledge-bases/$knowledgeBaseId'
+      fullPath: '/knowledge-bases/$knowledgeBaseId'
+      preLoaderRoute: typeof KnowledgeBasesKnowledgeBaseIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tasks/new': {
-      id: '/tasks/new'
-      path: '/tasks/new'
-      fullPath: '/tasks/new'
-      preLoaderRoute: typeof TasksNewRouteImport
+    '/documents/$documentId': {
+      id: '/documents/$documentId'
+      path: '/documents/$documentId'
+      fullPath: '/documents/$documentId'
+      preLoaderRoute: typeof DocumentsDocumentIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tasks/$taskId': {
-      id: '/tasks/$taskId'
-      path: '/tasks/$taskId'
-      fullPath: '/tasks/$taskId'
-      preLoaderRoute: typeof TasksTaskIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/srm-portals/$portalId': {
-      id: '/srm-portals/$portalId'
-      path: '/srm-portals/$portalId'
-      fullPath: '/srm-portals/$portalId'
-      preLoaderRoute: typeof SrmPortalsPortalIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/runs/$runId': {
-      id: '/runs/$runId'
-      path: '/runs/$runId'
-      fullPath: '/runs/$runId'
-      preLoaderRoute: typeof RunsRunIdRouteImport
+    '/chat/$sessionId': {
+      id: '/chat/$sessionId'
+      path: '/chat/$sessionId'
+      fullPath: '/chat/$sessionId'
+      preLoaderRoute: typeof ChatSessionIdRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -337,20 +299,18 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ArtifactsRoute: ArtifactsRoute,
-  ComponentsRoute: ComponentsRoute,
-  DashboardRoute: DashboardRoute,
-  SettingsRoute: SettingsRoute,
-  RunsRunIdRoute: RunsRunIdRoute,
-  SrmPortalsPortalIdRoute: SrmPortalsPortalIdRoute,
-  TasksTaskIdRoute: TasksTaskIdRoute,
-  TasksNewRoute: TasksNewRoute,
-  WorkflowsWorkflowIdRoute: WorkflowsWorkflowIdRoute,
-  RunsIndexRoute: RunsIndexRoute,
-  SrmPortalsIndexRoute: SrmPortalsIndexRoute,
-  TasksIndexRoute: TasksIndexRoute,
-  WebWorkspaceIndexRoute: WebWorkspaceIndexRoute,
-  WorkflowsIndexRoute: WorkflowsIndexRoute,
+  HomeRoute: HomeRoute,
+  PreferencesRoute: PreferencesRoute,
+  ProfileRoute: ProfileRoute,
+  UploadsRoute: UploadsRoute,
+  ChatSessionIdRoute: ChatSessionIdRoute,
+  DocumentsDocumentIdRoute: DocumentsDocumentIdRoute,
+  KnowledgeBasesKnowledgeBaseIdRoute: KnowledgeBasesKnowledgeBaseIdRoute,
+  KnowledgeSetsKnowledgeSetIdRoute: KnowledgeSetsKnowledgeSetIdRoute,
+  ChatIndexRoute: ChatIndexRoute,
+  DocumentsIndexRoute: DocumentsIndexRoute,
+  KnowledgeBasesIndexRoute: KnowledgeBasesIndexRoute,
+  KnowledgeSetsIndexRoute: KnowledgeSetsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

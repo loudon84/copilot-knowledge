@@ -17,12 +17,12 @@ export function SearchInput({
 }: SearchInputProps) {
   return (
     <div className={cn("relative", className)}>
-      <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+      <Search className="absolute top-2.5 left-2.5 h-4 w-4 text-muted-foreground" />
       <Input
         className="pl-8"
+        onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
       />
     </div>
   );

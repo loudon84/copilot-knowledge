@@ -1,0 +1,170 @@
+[
+  {
+    "id": "kb_001",
+    "name": "销售产品知识库",
+    "description": "覆盖产品卖点、报价策略与竞品分析等销售资料。",
+    "icon": "package",
+    "tags": ["销售", "产品"],
+    "status": "active",
+    "visibility": "organization",
+    "parserStrategy": "general",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 512,
+    "documentCount": 4,
+    "chunkCount": 156,
+    "owner": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-01T08:00:00.000Z",
+    "updatedAt": "2026-07-21T16:00:00.000Z"
+  },
+  {
+    "id": "kb_002",
+    "name": "财务管理制度",
+    "description": "费用报销、预算控制、会计核算等相关制度文档。",
+    "icon": "wallet",
+    "tags": ["财务", "制度"],
+    "status": "active",
+    "visibility": "department",
+    "parserStrategy": "manual",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 768,
+    "documentCount": 3,
+    "chunkCount": 99,
+    "owner": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-04T08:00:00.000Z",
+    "updatedAt": "2026-07-22T16:00:00.000Z"
+  },
+  {
+    "id": "kb_003",
+    "name": "采购流程规范",
+    "description": "采购申请、供应商准入、招标与验收流程说明。",
+    "icon": "truck",
+    "tags": ["采购", "流程"],
+    "status": "active",
+    "visibility": "organization",
+    "parserStrategy": "general",
+    "embeddingModel": "text-embedding-3-large",
+    "chunkSize": 512,
+    "documentCount": 3,
+    "chunkCount": 81,
+    "owner": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-07T08:00:00.000Z",
+    "updatedAt": "2026-07-23T16:00:00.000Z"
+  },
+  {
+    "id": "kb_004",
+    "name": "合同模板库",
+    "description": "标准合同、补充协议与条款修订说明。",
+    "icon": "file-text",
+    "tags": ["合同", "法务"],
+    "status": "active",
+    "visibility": "department",
+    "parserStrategy": "manual",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 1024,
+    "documentCount": 3,
+    "chunkCount": 112,
+    "owner": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-10T08:00:00.000Z",
+    "updatedAt": "2026-07-24T16:00:00.000Z"
+  },
+  {
+    "id": "kb_005",
+    "name": "产品技术资料",
+    "description": "产品规格、安装手册、版本发布说明。",
+    "icon": "cpu",
+    "tags": ["产品", "技术"],
+    "status": "syncing",
+    "visibility": "organization",
+    "parserStrategy": "qa",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 512,
+    "documentCount": 3,
+    "chunkCount": 158,
+    "owner": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-13T08:00:00.000Z",
+    "updatedAt": "2026-07-25T16:00:00.000Z"
+  },
+  {
+    "id": "kb_006",
+    "name": "人力资源政策",
+    "description": "考勤、绩效、薪酬与员工手册。",
+    "icon": "users",
+    "tags": ["HR", "政策"],
+    "status": "active",
+    "visibility": "private",
+    "parserStrategy": "general",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 512,
+    "documentCount": 2,
+    "chunkCount": 116,
+    "owner": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-16T08:00:00.000Z",
+    "updatedAt": "2026-07-26T16:00:00.000Z"
+  },
+  {
+    "id": "kb_007",
+    "name": "客户服务手册",
+    "description": "客服话术、工单处理与售后流程。",
+    "icon": "headset",
+    "tags": ["客服", "售后"],
+    "status": "error",
+    "visibility": "organization",
+    "parserStrategy": "general",
+    "embeddingModel": "text-embedding-3-large",
+    "chunkSize": 384,
+    "documentCount": 3,
+    "chunkCount": 40,
+    "owner": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-19T08:00:00.000Z",
+    "updatedAt": "2026-07-27T16:00:00.000Z"
+  },
+  {
+    "id": "kb_008",
+    "name": "安全合规知识库",
+    "description": "信息安全、权限管控与合规审查资料。",
+    "icon": "shield",
+    "tags": ["权限", "合规", "安全"],
+    "status": "disabled",
+    "visibility": "department",
+    "parserStrategy": "manual",
+    "embeddingModel": "bge-m3",
+    "chunkSize": 640,
+    "documentCount": 3,
+    "chunkCount": 73,
+    "owner": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-22T08:00:00.000Z",
+    "updatedAt": "2026-07-28T16:00:00.000Z"
+  }
+]

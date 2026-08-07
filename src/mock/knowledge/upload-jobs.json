@@ -1,0 +1,102 @@
+[
+  {
+    "id": "job_001",
+    "knowledgeBaseId": "kb_001",
+    "fileName": "新客攻坚案例.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 920000,
+    "status": "completed",
+    "progress": 100,
+    "documentId": "doc_001",
+    "createdAt": "2026-07-31T09:00:00.000Z",
+    "updatedAt": "2026-07-31T10:00:00.000Z"
+  },
+  {
+    "id": "job_002",
+    "knowledgeBaseId": "kb_002",
+    "fileName": "差旅费标准-待审.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 140000,
+    "status": "parsing",
+    "progress": 62,
+    "createdAt": "2026-08-01T09:00:00.000Z",
+    "updatedAt": "2026-08-01T10:00:00.000Z"
+  },
+  {
+    "id": "job_003",
+    "knowledgeBaseId": "kb_003",
+    "fileName": "供应商评分模板.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 88000,
+    "status": "uploading",
+    "progress": 35,
+    "createdAt": "2026-08-02T09:00:00.000Z",
+    "updatedAt": "2026-08-02T09:00:00.000Z"
+  },
+  {
+    "id": "job_004",
+    "knowledgeBaseId": "kb_004",
+    "fileName": "fail_合同草稿.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 210000,
+    "status": "failed",
+    "progress": 78,
+    "forceFail": true,
+    "errorMessage": "解析超时：Mock 固定失败案例",
+    "createdAt": "2026-08-03T09:00:00.000Z",
+    "updatedAt": "2026-08-03T11:00:00.000Z"
+  },
+  {
+    "id": "job_005",
+    "knowledgeBaseId": "kb_005",
+    "fileName": "固件升级指南.md",
+    "extension": "md",
+    "mimeType": "text/markdown",
+    "size": 18000,
+    "status": "waiting",
+    "progress": 0,
+    "createdAt": "2026-08-04T09:00:00.000Z",
+    "updatedAt": "2026-08-04T09:00:00.000Z"
+  },
+  {
+    "id": "job_006",
+    "knowledgeBaseId": "kb_006",
+    "fileName": "新人入职清单.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 360000,
+    "status": "completed",
+    "progress": 100,
+    "documentId": "doc_017",
+    "createdAt": "2026-07-30T09:00:00.000Z",
+    "updatedAt": "2026-07-30T11:00:00.000Z"
+  },
+  {
+    "id": "job_007",
+    "knowledgeBaseId": "kb_007",
+    "fileName": "客诉升级机制.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 126000,
+    "status": "cancelled",
+    "progress": 20,
+    "createdAt": "2026-07-29T09:00:00.000Z",
+    "updatedAt": "2026-07-29T10:00:00.000Z"
+  },
+  {
+    "id": "job_008",
+    "knowledgeBaseId": "kb_008",
+    "fileName": "权限审计周报.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 95000,
+    "status": "completed",
+    "progress": 100,
+    "createdAt": "2026-07-28T09:00:00.000Z",
+    "updatedAt": "2026-07-28T11:00:00.000Z"
+  }
+]

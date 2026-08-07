@@ -10,7 +10,7 @@ import type { ForgeConfig } from "@electron-forge/shared-types";
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
-    executableName: "SMC-Copilot",
+    executableName: "Copilot-Knowledge",
     download: {
       mirrorOptions: {
         mirror: "https://npmmirror.com/mirrors/electron/",
@@ -20,7 +20,7 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({
-      setupExe: "SMC-Copilot.exe",
+      setupExe: "Copilot-Knowledge-Setup.exe",
     }),
     new MakerZIP({}, ["darwin"]),
     new MakerRpm({}),
@@ -35,8 +35,8 @@ const config: ForgeConfig = {
       name: "@electron-forge/publisher-github",
       config: {
         repository: {
-          owner: "LuanRoger",
-          name: "electron-shadcn",
+          owner: "loudon84",
+          name: "copilot-knowledge",
         },
         draft: true,
         prerelease: false,

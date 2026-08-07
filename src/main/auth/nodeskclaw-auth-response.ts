@@ -17,14 +17,14 @@ export interface AuthUserResponse {
   is_super_admin?: boolean;
   name: string;
   org_role?: string | null;
-  phone?: string | null;
-  portal_org_role?: string | null;
-  role?: string;
-  username?: string;
   organization?: {
     id: string;
     name: string;
   };
+  phone?: string | null;
+  portal_org_role?: string | null;
+  role?: string;
+  username?: string;
 }
 
 export interface AuthTokenData {
@@ -53,6 +53,12 @@ export function mapMeToPublicUser(me: AuthUserResponse): PublicAuthUser {
     id: me.id,
     email: me.email,
     displayName: me.name ?? me.email,
+    phone: me.phone ?? undefined,
+    avatarUrl: me.avatar_url ?? undefined,
+    currentOrgId: me.current_org_id ?? undefined,
+    orgRole: me.org_role ?? undefined,
+    portalOrgRole: me.portal_org_role ?? undefined,
+    isSuperAdmin: me.is_super_admin ?? undefined,
   };
 }
 

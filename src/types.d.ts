@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_AUTOTASK_API_MODE?: string;
+  readonly VITE_KNOWLEDGE_DATA_MODE?: "mock" | "remote";
 }
 
 interface ImportMeta {

@@ -1,18 +1,18 @@
 import { ipc } from "@/ipc/manager";
 import type { PublicAuthState } from "@/types/auth";
-import type { AutoTaskEndpointConfig } from "@/types/endpoint-config";
+import type { KnowledgeEndpointConfig } from "@/types/endpoint-config";
 
 export function getAuthState(): Promise<PublicAuthState> {
   return ipc.client.auth.getState();
 }
 
-export function getAuthEndpointConfig(): Promise<AutoTaskEndpointConfig> {
+export function getAuthEndpointConfig(): Promise<KnowledgeEndpointConfig> {
   return ipc.client.auth.getEndpointConfig();
 }
 
 export function saveAuthEndpointConfig(
-  config: AutoTaskEndpointConfig
-): Promise<AutoTaskEndpointConfig> {
+  config: KnowledgeEndpointConfig
+): Promise<KnowledgeEndpointConfig> {
   return ipc.client.auth.saveEndpoint(config);
 }
 

@@ -8,7 +8,7 @@ export default function BaseLayout({
 }) {
   return (
     <>
-      <DragWindowRegion title="Copilot Studio" />
+      <DragWindowRegion title="Copilot Knowledge" />
       <main className="h-screen p-2 pb-20">{children}</main>
     </>
   );

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "perm_001",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_001",
+    "user": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-13T09:00:00.000Z"
+  },
+  {
+    "id": "perm_002",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_001",
+    "user": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "role": "Editor",
+    "createdAt": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "perm_003",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_002",
+    "user": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-15T09:00:00.000Z"
+  },
+  {
+    "id": "perm_004",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_002",
+    "user": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "role": "Viewer",
+    "createdAt": "2026-07-16T09:00:00.000Z"
+  },
+  {
+    "id": "perm_005",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_003",
+    "user": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-17T09:00:00.000Z"
+  },
+  {
+    "id": "perm_006",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_004",
+    "user": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "role": "Manager",
+    "createdAt": "2026-07-18T09:00:00.000Z"
+  },
+  {
+    "id": "perm_007",
+    "resourceType": "knowledge_base",
+    "resourceId": "kb_005",
+    "user": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-19T09:00:00.000Z"
+  },
+  {
+    "id": "perm_008",
+    "resourceType": "knowledge_set",
+    "resourceId": "ks_001",
+    "user": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-20T09:00:00.000Z"
+  },
+  {
+    "id": "perm_009",
+    "resourceType": "knowledge_set",
+    "resourceId": "ks_002",
+    "user": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "role": "Manager",
+    "createdAt": "2026-07-21T09:00:00.000Z"
+  },
+  {
+    "id": "perm_010",
+    "resourceType": "document",
+    "resourceId": "doc_001",
+    "user": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "role": "Owner",
+    "createdAt": "2026-07-22T09:00:00.000Z"
+  },
+  {
+    "id": "perm_011",
+    "resourceType": "document",
+    "resourceId": "doc_011",
+    "user": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "role": "Editor",
+    "createdAt": "2026-07-23T09:00:00.000Z"
+  },
+  {
+    "id": "perm_012",
+    "resourceType": "document",
+    "resourceId": "doc_022",
+    "user": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "role": "Viewer",
+    "createdAt": "2026-07-24T09:00:00.000Z"
+  }
+]

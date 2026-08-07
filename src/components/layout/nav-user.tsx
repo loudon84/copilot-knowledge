@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ChevronsUpDown, LogOut, Settings } from "lucide-react";
+import { ChevronsUpDown, LogOut, Palette, User } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -15,19 +15,17 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { useAuth } from "@/modules/auth/AutoTaskAuthProvider";
-import { getApiMode } from "@/services/endpoint-config";
+import { useAuth } from "@/modules/auth/KnowledgeAuthProvider";
 import type { User as NavUserType } from "./types";
 
 export function NavUser({ user }: { user: NavUserType }) {
   const { isMobile } = useSidebar();
   const { authState, logout } = useAuth();
-  const isRemote = getApiMode() === "remote";
 
   const displayUser = authState.user
     ? {
         name: authState.user.displayName,
-        email: authState.user.email,
+        email: authState.user.email ?? "",
       }
     : user;
 
@@ -79,17 +77,21 @@ export function NavUser({ user }: { user: NavUserType }) {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
-              <Link to="/settings">
-                <Settings />
-                系统设置
+              <Link to="/profile">
+                <User />
+                用户中心
               </Link>
             </DropdownMenuItem>
-            {isRemote && (
-              <DropdownMenuItem onClick={() => logout()}>
-                <LogOut />
-                退出登录
-              </DropdownMenuItem>
-            )}
+            <DropdownMenuItem asChild>
+              <Link to="/preferences">
+                <Palette />
+                外观设置
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => logout()}>
+              <LogOut />
+              退出登录
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

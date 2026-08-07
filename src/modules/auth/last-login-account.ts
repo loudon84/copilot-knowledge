@@ -1,10 +1,12 @@
-const LAST_LOGIN_ACCOUNT_KEY = "autotask:last-login-account";
+const LAST_LOGIN_ACCOUNT_KEY = "knowledge:last-login-account";
 const LEGACY_LAST_LOGIN_EMAIL_KEY = "autotask:last-login-email";
+const LEGACY_LAST_LOGIN_ACCOUNT_KEY = "autotask:last-login-account";
 
 export function getLastLoginAccount(): string {
   try {
     return (
       localStorage.getItem(LAST_LOGIN_ACCOUNT_KEY) ??
+      localStorage.getItem(LEGACY_LAST_LOGIN_ACCOUNT_KEY) ??
       localStorage.getItem(LEGACY_LAST_LOGIN_EMAIL_KEY) ??
       ""
     );

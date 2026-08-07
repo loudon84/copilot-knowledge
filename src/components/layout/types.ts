@@ -34,4 +34,4 @@ type SidebarData = {
   navGroups: NavGroup[];
 };
 
-export type { SidebarData, NavGroup, NavItem, NavCollapsible, NavLink, User };
+export type { NavCollapsible, NavGroup, NavItem, NavLink, SidebarData, User };

@@ -1,13 +1,18 @@
-import { cn } from "@/utils/tailwind";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { cn } from "@/utils/tailwind";
 
 type AppHeaderProps = React.HTMLAttributes<HTMLElement> & {
   title?: string;
   children?: React.ReactNode;
 };
 
-export function AppHeader({ className, title, children, ...props }: AppHeaderProps) {
+export function AppHeader({
+  className,
+  title,
+  children,
+  ...props
+}: AppHeaderProps) {
   return (
     <header
       className={cn(
@@ -17,11 +22,13 @@ export function AppHeader({ className, title, children, ...props }: AppHeaderPro
       {...props}
     >
       <SidebarTrigger className="-ms-1" />
-      <Separator orientation="vertical" className="h-4" />
+      <Separator className="h-4" orientation="vertical" />
       {title && (
-        <h1 className="text-sm font-medium text-muted-foreground">{title}</h1>
+        <h1 className="font-medium text-muted-foreground text-sm">{title}</h1>
       )}
-      <div className="flex flex-1 items-center justify-end gap-2">{children}</div>
+      <div className="flex flex-1 items-center justify-end gap-2">
+        {children}
+      </div>
     </header>
   );
 }

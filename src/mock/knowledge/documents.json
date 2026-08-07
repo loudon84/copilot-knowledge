@@ -1,0 +1,474 @@
+[
+  {
+    "id": "doc_001",
+    "knowledgeBaseId": "kb_001",
+    "name": "销售话术手册.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 2450000,
+    "currentVersion": 3,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 86,
+    "pageCount": 24,
+    "updatedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-02T09:00:00.000Z",
+    "updatedAt": "2026-07-11T15:00:00.000Z"
+  },
+  {
+    "id": "doc_002",
+    "knowledgeBaseId": "kb_001",
+    "name": "产品报价策略.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 380000,
+    "currentVersion": 2,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 42,
+    "pageCount": 12,
+    "updatedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-03T09:00:00.000Z",
+    "updatedAt": "2026-07-12T15:00:00.000Z"
+  },
+  {
+    "id": "doc_003",
+    "knowledgeBaseId": "kb_001",
+    "name": "竞品分析-2026Q2.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 520000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 28,
+    "pageCount": 8,
+    "updatedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-04T09:00:00.000Z",
+    "updatedAt": "2026-07-13T15:00:00.000Z"
+  },
+  {
+    "id": "doc_004",
+    "knowledgeBaseId": "kb_001",
+    "name": "大客户跟进指南.md",
+    "extension": "md",
+    "mimeType": "text/markdown",
+    "size": 48000,
+    "currentVersion": 1,
+    "parseStatus": "parsing",
+    "visibility": "organization",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-05T09:00:00.000Z",
+    "updatedAt": "2026-07-14T15:00:00.000Z"
+  },
+  {
+    "id": "doc_005",
+    "knowledgeBaseId": "kb_002",
+    "name": "费用报销制度.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 1120000,
+    "currentVersion": 2,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 64,
+    "pageCount": 18,
+    "updatedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-06T09:00:00.000Z",
+    "updatedAt": "2026-07-15T15:00:00.000Z"
+  },
+  {
+    "id": "doc_006",
+    "knowledgeBaseId": "kb_002",
+    "name": "预算管理办法.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 290000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 35,
+    "pageCount": 10,
+    "updatedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-07T09:00:00.000Z",
+    "updatedAt": "2026-07-16T15:00:00.000Z"
+  },
+  {
+    "id": "doc_007",
+    "knowledgeBaseId": "kb_002",
+    "name": "会计科目说明.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 410000,
+    "currentVersion": 1,
+    "parseStatus": "failed",
+    "visibility": "private",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-08T09:00:00.000Z",
+    "updatedAt": "2026-07-17T15:00:00.000Z"
+  },
+  {
+    "id": "doc_008",
+    "knowledgeBaseId": "kb_003",
+    "name": "采购申请流程.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 890000,
+    "currentVersion": 2,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 51,
+    "pageCount": 15,
+    "updatedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-09T09:00:00.000Z",
+    "updatedAt": "2026-07-18T15:00:00.000Z"
+  },
+  {
+    "id": "doc_009",
+    "knowledgeBaseId": "kb_003",
+    "name": "供应商准入标准.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 240000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 30,
+    "pageCount": 9,
+    "updatedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-10T09:00:00.000Z",
+    "updatedAt": "2026-07-19T15:00:00.000Z"
+  },
+  {
+    "id": "doc_010",
+    "knowledgeBaseId": "kb_003",
+    "name": "招标评分表.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 180000,
+    "currentVersion": 1,
+    "parseStatus": "pending",
+    "visibility": "department",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-11T09:00:00.000Z",
+    "updatedAt": "2026-07-20T15:00:00.000Z"
+  },
+  {
+    "id": "doc_011",
+    "knowledgeBaseId": "kb_004",
+    "name": "标准销售合同.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 760000,
+    "currentVersion": 3,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 72,
+    "pageCount": 20,
+    "updatedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-12T09:00:00.000Z",
+    "updatedAt": "2026-07-21T15:00:00.000Z"
+  },
+  {
+    "id": "doc_012",
+    "knowledgeBaseId": "kb_004",
+    "name": "保密协议模板.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 96000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 18,
+    "pageCount": 5,
+    "updatedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-13T09:00:00.000Z",
+    "updatedAt": "2026-07-22T15:00:00.000Z"
+  },
+  {
+    "id": "doc_013",
+    "knowledgeBaseId": "kb_004",
+    "name": "合同条款修订说明.md",
+    "extension": "md",
+    "mimeType": "text/markdown",
+    "size": 32000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 22,
+    "updatedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-14T09:00:00.000Z",
+    "updatedAt": "2026-07-23T15:00:00.000Z"
+  },
+  {
+    "id": "doc_014",
+    "knowledgeBaseId": "kb_005",
+    "name": "产品规格说明书.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 3200000,
+    "currentVersion": 2,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 110,
+    "pageCount": 36,
+    "updatedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-15T09:00:00.000Z",
+    "updatedAt": "2026-07-24T15:00:00.000Z"
+  },
+  {
+    "id": "doc_015",
+    "knowledgeBaseId": "kb_005",
+    "name": "安装部署手册.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 540000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 48,
+    "pageCount": 14,
+    "updatedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-16T09:00:00.000Z",
+    "updatedAt": "2026-07-25T15:00:00.000Z"
+  },
+  {
+    "id": "doc_016",
+    "knowledgeBaseId": "kb_005",
+    "name": "版本发布说明-v3.2.md",
+    "extension": "md",
+    "mimeType": "text/markdown",
+    "size": 28000,
+    "currentVersion": 1,
+    "parseStatus": "parsing",
+    "visibility": "organization",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-17T09:00:00.000Z",
+    "updatedAt": "2026-07-26T15:00:00.000Z"
+  },
+  {
+    "id": "doc_017",
+    "knowledgeBaseId": "kb_006",
+    "name": "员工手册2026.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 1560000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "private",
+    "chunkCount": 90,
+    "pageCount": 28,
+    "updatedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-18T09:00:00.000Z",
+    "updatedAt": "2026-07-27T15:00:00.000Z"
+  },
+  {
+    "id": "doc_018",
+    "knowledgeBaseId": "kb_006",
+    "name": "绩效考核标准.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 210000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "private",
+    "chunkCount": 26,
+    "pageCount": 7,
+    "updatedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-19T09:00:00.000Z",
+    "updatedAt": "2026-07-28T15:00:00.000Z"
+  },
+  {
+    "id": "doc_019",
+    "knowledgeBaseId": "kb_007",
+    "name": "客服话术库.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 680000,
+    "currentVersion": 1,
+    "parseStatus": "failed",
+    "visibility": "organization",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-20T09:00:00.000Z",
+    "updatedAt": "2026-07-29T15:00:00.000Z"
+  },
+  {
+    "id": "doc_020",
+    "knowledgeBaseId": "kb_007",
+    "name": "工单处理流程.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 175000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "organization",
+    "chunkCount": 24,
+    "pageCount": 6,
+    "updatedBy": {
+      "id": "user_005",
+      "displayName": "陈七",
+      "email": "chenqi@example.com"
+    },
+    "createdAt": "2026-07-21T09:00:00.000Z",
+    "updatedAt": "2026-07-30T15:00:00.000Z"
+  },
+  {
+    "id": "doc_021",
+    "knowledgeBaseId": "kb_007",
+    "name": "售后FAQ.txt",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "size": 22000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "custom",
+    "chunkCount": 16,
+    "updatedBy": {
+      "id": "user_001",
+      "displayName": "张三",
+      "email": "zhangsan@example.com"
+    },
+    "createdAt": "2026-07-22T09:00:00.000Z",
+    "updatedAt": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "id": "doc_022",
+    "knowledgeBaseId": "kb_008",
+    "name": "权限矩阵说明.pdf",
+    "extension": "pdf",
+    "mimeType": "application/pdf",
+    "size": 430000,
+    "currentVersion": 2,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 40,
+    "pageCount": 11,
+    "updatedBy": {
+      "id": "user_002",
+      "displayName": "李四",
+      "email": "lisi@example.com"
+    },
+    "createdAt": "2026-07-23T09:00:00.000Z",
+    "updatedAt": "2026-08-01T15:00:00.000Z"
+  },
+  {
+    "id": "doc_023",
+    "knowledgeBaseId": "kb_008",
+    "name": "信息安全制度.docx",
+    "extension": "docx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 310000,
+    "currentVersion": 1,
+    "parseStatus": "completed",
+    "visibility": "department",
+    "chunkCount": 33,
+    "pageCount": 9,
+    "updatedBy": {
+      "id": "user_003",
+      "displayName": "王五",
+      "email": "wangwu@example.com"
+    },
+    "createdAt": "2026-07-24T09:00:00.000Z",
+    "updatedAt": "2026-08-02T15:00:00.000Z"
+  },
+  {
+    "id": "doc_024",
+    "knowledgeBaseId": "kb_008",
+    "name": "合规审查清单.xlsx",
+    "extension": "xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "size": 150000,
+    "currentVersion": 1,
+    "parseStatus": "pending",
+    "visibility": "private",
+    "chunkCount": 0,
+    "updatedBy": {
+      "id": "user_004",
+      "displayName": "赵六",
+      "email": "zhaoliu@example.com"
+    },
+    "createdAt": "2026-07-25T09:00:00.000Z",
+    "updatedAt": "2026-08-03T15:00:00.000Z"
+  }
+]
